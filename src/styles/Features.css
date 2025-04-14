@@ -1,0 +1,46 @@
+.features-section {
+    text-align: center;
+    padding: 60px 20px;
+    width: 100%; /* Ensures it fits within parent */
+    box-sizing: border-box; /* Includes padding in width */
+  }
+  
+  .features-section h3 {
+    font-size: 30px;
+    color: #4C1D95;
+    margin-bottom: 40px;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(76, 29, 149, 0.2);
+  }
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .feature-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(167, 139, 250, 0.3);
+  }
+  
+  .feature-card h4 {
+    color: #FDBA74;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-card p {
+    color: #4B5563;
+    font-size: 15px;
+    line-height: 1.5;
+  }

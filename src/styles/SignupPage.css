@@ -1,0 +1,143 @@
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #2DD4BF 0%, #A78BFA 50%, #FDBA74 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.signup-container {
+  background-color: rgba(255, 255, 255, 0.97);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+h2 {
+  font-size: 32px;
+  color: #4C1D95;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #6B7280;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  border: 2px solid #E5E7EB;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #1F2937;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #A78BFA;
+}
+
+.email-btn {
+  padding: 12px;
+  background-color: #A78BFA;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.email-btn:hover {
+  background-color: #8B5CF6;
+  box-shadow: 0 4px 15px rgba(167, 139, 250, 0.3);
+}
+
+.divider {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #9CA3AF;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #D1D5DB;
+}
+
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border: 2px solid #A78BFA;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #A78BFA;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.google-btn:hover {
+  background-color: #A78BFA;
+  color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(167, 139, 250, 0.3);
+}
+
+.google-icon {
+  font-size: 20px;
+  color: #4285F4;
+}
+
+.error {
+  color: #EF4444;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.alternative {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.alternative span {
+  color: #2DD4BF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.alternative span:hover {
+  color: #26A69A;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

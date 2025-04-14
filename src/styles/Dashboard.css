@@ -1,0 +1,309 @@
+.dashboard-page {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #2DD4BF 0%, #A78BFA 50%, #FDBA74 100%);
+    padding: 20px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.97);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: #4C1D95;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .logout-btn {
+    padding: 10px 20px;
+    background-color: #EF4444;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background-color: #DC2626;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+  }
+  
+  .dashboard-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .greeting-section {
+    margin-left: 25%;
+    max-width: 500px;
+    min-height: 300px;
+    background-color: rgba(228, 191, 233, 0.97);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  .cartoon-image {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .greeting-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .greeting-name {
+    font-size: 22px;
+    color: #4C1D95;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .greeting-message {
+    font-size: 24px;
+    color: #143ac2;
+    margin: 5px 0 0 0;
+    font-weight: 500;
+  }
+  
+  .greeting-recommendation {
+    font-size: 24px;
+    color: #320674;
+    margin: 10px 0 0 0;
+    font-weight: 500;
+  }
+  
+  .analytics-section, .upload-section, .chatbot-section {
+    background-color: rgba(138, 238, 245, 0.97);
+    padding: 30px;
+    border-radius: 20px;
+    text-align:center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #4C1D95;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .analytics-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: lightsalmon;
+  }
+  
+  .card {
+    flex: 1;
+    background-color: #c2f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    color: #c70d0d;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 20px;
+    color: #922527;
+    font-weight: 600;
+  }
+  
+  .upload-section input {
+    margin: 15px 0;
+    padding: 10px;
+    border: 2px solid #23c126;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .upload-instruction {
+    font-size: 16px;
+    color: #730475;
+    margin-bottom: 15px;
+  }
+  
+  .upload-btn {
+    padding: 12px 25px;
+    background-color: #7042e4;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #efefef;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .upload-btn:hover {
+    background-color: #8B5CF6;
+    box-shadow: 0 4px 15px rgba(167, 139, 250, 0.3);
+  }
+  
+  .upload-status {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #546d6a;
+  }
+  
+  .uploaded-image img {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chatbot-icon {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border: 3px solid #FDBA74;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 15px rgba(253, 186, 116, 0.7);
+    animation: pulse 2s infinite;
+    transition: transform 0.3s ease;
+  }
+  
+  .chatbot-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .chatbot-icon:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 20px rgba(253, 186, 116, 1);
+  }
+  
+  .chatbot-section {
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    width: 350px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .chat-window {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #FFF3E0; /* Changed to soft beige */
+    border-radius: 10px;
+  }
+  
+  .chat-message {
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 80%;
+  }
+  
+  .chat-message.bot {
+    background-color: #ca6fb6;
+    color: #FFFFFF;
+    align-self: flex-start;
+  }
+  
+  .chat-message.user {
+    background-color: #A78BFA;
+    color: #FFFFFF;
+    align-self: flex-end;
+    margin-left: auto;
+  }
+  
+  .chat-message p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .chat-input-form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chat-input-form input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #E5E7EB;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #1F2937;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .chat-input-form input:focus {
+    border-color: #d78585;
+  }
+  
+  .chat-send-btn {
+    padding: 10px 20px;
+    background-color: #FDBA74;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .chat-send-btn:hover {
+    background-color: #FB923C;
+    box-shadow: 0 4px 15px rgba(253, 186, 116, 0.3);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
