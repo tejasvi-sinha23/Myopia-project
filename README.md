@@ -85,3 +85,8 @@ The Flask API serves the trained model, which was trained on a dataset of eye im
 
 #### 🏆 Model Accuracy
 The hybrid model achieved a 90% accuracy on the dataset during training. The model combines the strengths of classical and quantum methods to provide a robust solution for medical image classification.
+## 🚧 Current Status:
+- The backend and frontend components are integrated.
+- The Quantum-Classical model integration is in progress.
+- Deployment is yet to be completed as the integration work is still ongoing.
+- Currently, the React frontend and Flask backend can run locally for testing purposes.
