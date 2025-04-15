@@ -1,69 +1,87 @@
-# Myopia-project
+# Myopia-Project - Eye Myopia Detection using Quantum-Classical Hybrid Model
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project integrates a **Quantum-Classical Hybrid Model** to detect **myopia** in eye images. The backend uses **Flask** to handle image classification, while the frontend is built using **React** to provide an interactive user interface for uploading images and viewing predictions.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Project Overview
 
-### `npm start`
+The **Myopia-Project** leverages both **quantum computing** and **classical machine learning** to classify eye images as **Normal** or **Myopic**. The goal of this project is to explore the potential of quantum computing in medical image classification while providing a practical solution for detecting eye conditions using a hybrid approach.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔹 **Key Components**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Backend (Flask API)**: 
+   - The backend runs a **quantum-classical hybrid model** using **PyTorch** and **PennyLane**.
+   - The model classifies images of eyes into **Normal** and **Myopic** categories.
+   - A REST API built with **Flask** is used to serve the model and handle prediction requests.
 
-### `npm test`
+2. **Frontend (React UI)**: 
+   - The frontend is built using **React** and allows users to upload an image of an eye to the backend for prediction.
+   - The prediction (Normal or Myopic) is displayed along with the confidence score.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Machine Learning Model**: 
+   - The model combines **quantum circuits** using PennyLane for data encoding and entanglement, with a **classical neural network** for decision-making.
+   - The model was trained on a dataset of eye images to detect myopia and achieved an accuracy of around **90%**.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Setup Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🔹 Backend (Flask)
+1. Clone the repository and navigate to the backend directory (`flask_api`).
+2. Create a virtual environment and activate it:
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate  # On Windows
+   source venv/bin/activate  # On macOS/Linux
+3. Install the required dependencies:
+pip install -r requirements.txt
+4. Run the Flask API:
+python app.py
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### 🔹 Frontend (React)
+Navigate to the frontend directory (myopique-website).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Install the necessary dependencies:
+npm install
+2. Start the React development server:
+npm start
+#### 🔧 Dependencies
+Backend (Flask)
+Flask
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+torch
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point, you're on your own.
+torchvision
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However, we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+pennylane
 
-## Learn More
+numpy
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).\
-To learn React, check out the [React documentation](https://reactjs.org/).
+PIL
 
-### Code Splitting
+flask-cors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+matplotlib
 
-### Analyzing the Bundle Size
+And other necessary dependencies listed in requirements.txt.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Frontend (React)
+react
 
-### Making a Progressive Web App
+react-dom
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+react-scripts
 
-### Advanced Configuration
+axios
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+And other dependencies defined in the package.json file.
 
-### Deployment
+##### 🧠 Model Explanation
+The quantum-classical hybrid model used in this project leverages Quantum Computing to encode the image data into quantum states. The quantum layer then applies quantum circuits using PennyLane for entanglement, followed by a classical neural network for the final classification (Normal vs. Myopic).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The Flask API serves the trained model, which was trained on a dataset of eye images to predict whether an eye is Normal or Myopic. The React UI allows users to upload eye images and receive predictions based on the trained model.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### 🏆 Model Accuracy
+The hybrid model achieved a 90% accuracy on the dataset during training. The model combines the strengths of classical and quantum methods to provide a robust solution for medical image classification.
