@@ -49,32 +49,22 @@ npm install
 npm start
 #### 🔧 Dependencies
 Backend (Flask)
-Flask
-
-torch
-
-torchvision
-
-pennylane
-
-numpy
-
-PIL
-
-flask-cors
-
-matplotlib
+1. Flask
+2. torch
+3. torchvision
+4. pennylane
+5. numpy
+6. PIL
+7. flask-cors
+8. matplotlib
 
 And other necessary dependencies listed in requirements.txt.
 
 #### Frontend (React)
-react
-
-react-dom
-
-react-scripts
-
-axios
+1. react
+2. react-dom
+3. react-scripts
+4. axios
 
 And other dependencies defined in the package.json file.
 
