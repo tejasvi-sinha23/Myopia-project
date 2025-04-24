@@ -79,7 +79,7 @@ The trained model achieved ~90% accuracy on the testing dataset.
 Well-optimized using classical pre-processing and quantum feature embedding.
 
 #### 🚧 Project Status
-✅ Model is trained and finalized
-✅ Flask backend and React frontend are fully integrated
-⚙️ Deployment pending — next step is to deploy the full-stack app on a cloud platform
-✅ Can be tested locally (localhost:5000 for Flask API, localhost:3000/dashboard for frontend)
+1. ✅ Model is trained and finalized
+2. ✅ Flask backend and React frontend are fully integrated
+3. ⚙️ Deployment pending — next step is to deploy the full-stack app on a cloud platform
+4. ✅ Can be tested locally (localhost:5000 for Flask API, localhost:3000/dashboard for frontend)
