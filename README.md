@@ -83,10 +83,13 @@ The quantum-classical hybrid model used in this project leverages Quantum Comput
 
 The Flask API serves the trained model, which was trained on a dataset of eye images to predict whether an eye is Normal or Myopic. The React UI allows users to upload eye images and receive predictions based on the trained model.
 
-#### 🏆 Model Accuracy
-The hybrid model achieved a 90% accuracy on the dataset during training. The model combines the strengths of classical and quantum methods to provide a robust solution for medical image classification.
-## 🚧 Current Status:
-- The backend and frontend components are integrated.
-- The Quantum-Classical model integration is in progress.
-- Deployment is yet to be completed as the integration work is still ongoing.
-- Currently, the React frontend and Flask backend can run locally for testing purposes.
+#### 🏆 Accuracy
+The trained model achieved ~90% accuracy on the testing dataset.
+
+Well-optimized using classical pre-processing and quantum feature embedding.
+
+#### 🚧 Project Status
+✅ Model is trained and finalized
+✅ Flask backend and React frontend are fully integrated
+⚙️ Deployment pending — next step is to deploy the full-stack app on a cloud platform
+✅ Can be tested locally (localhost:5000 for Flask API, localhost:3000/dashboard for frontend)
